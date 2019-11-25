@@ -1,0 +1,26 @@
+{
+    "name": "redmix0901/core",
+    "description": "Core app",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tran Dinh Tu",
+            "email": "redmix0901@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+          "providers": [
+            "Redmix0901\\Core\\CoreServiceProvider"
+          ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Redmix0901\\Core\\": "src/"
+        }
+    },
+}
