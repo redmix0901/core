@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Services\Cache;
+namespace Redmix0901\Core\Cache;
 
 use File;
 use Illuminate\Cache\CacheManager;
