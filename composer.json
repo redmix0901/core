@@ -1,7 +1,7 @@
 {
     "name": "redmix0901/core",
     "description": "Core app",
-    "type": "composer-plugin",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
