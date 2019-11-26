@@ -154,7 +154,7 @@ class Cache implements CacheInterface
         }
     }
 
-    protected openFile($file, $convert_to_array = true)
+    protected function openFile($file, $convert_to_array = true)
     {
         $file = File::get($file);
         if (!empty($file)) {
