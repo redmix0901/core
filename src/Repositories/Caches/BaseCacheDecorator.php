@@ -7,7 +7,7 @@ use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Database\Eloquent\Model;
 use Redmix0901\Core\Criteria\Contracts\CriteriaContract;
 use Redmix0901\Core\Repositories\Interfaces\BaseRepositoryInterface;
-use Redmix0901\Core\Services\Cache\Cache;
+use Redmix0901\Core\Cache\Cache;
 
 abstract class BaseCacheDecorator implements BaseRepositoryInterface
 {
