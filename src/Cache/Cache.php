@@ -140,7 +140,7 @@ class Cache implements CacheInterface
     {
         try {
             if ($json) {
-                $data = json_encode_prettify($data);
+                $data = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
             }
             if (!File::isDirectory(dirname($path))) {
                 File::makeDirectory(dirname($path), 493, true);
