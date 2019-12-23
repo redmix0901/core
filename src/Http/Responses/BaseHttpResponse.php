@@ -1,6 +1,6 @@
 <?php
 
-namespace Redmix0901\Http\Responses;
+namespace Redmix0901\Core\Http\Responses;
 
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\Resources\Json\JsonResource;
