@@ -60,7 +60,11 @@ abstract class BaseCacheDecorator implements BaseRepositoryInterface
             );
 
             if ($this->cache->has($key)) {
-                return $this->cache->get($key);
+                try {
+                    return $this->cache->get($key);
+                }
+                catch (\Exception $e) {
+                }
             }
 
             $value = call_user_func_array([$this->repository, $function], $args);
