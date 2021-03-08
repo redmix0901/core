@@ -61,11 +61,9 @@ abstract class BaseCacheDecorator implements BaseRepositoryInterface
 
             if ($this->cache->has($key)) {
                 try {
-                    $result = $this->cache->get($key);
-                    return $result;
+                    return $this->cache->get($key);
                 }
                 catch (\Exception $e) {
-                    $this->flushCache(__FUNCTION__, func_get_args());
                 }
             }
 
