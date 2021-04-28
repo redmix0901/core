@@ -54,7 +54,7 @@ class Cache implements CacheInterface
      */
     public function get($key)
     {
-        if (!file_exists($this->config['stored_keys'])) {
+        if (file_exists($this->config['stored_keys']) === false || is_readable($this->config['stored_keys']) === false) {
             return null;
         }
         return $this->cache->get($this->generateCacheKey($key));
